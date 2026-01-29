@@ -1,1 +1,10 @@
-
+name: Actualizar Cliente
+  
+on: 
+  push:
+jobs:
+  notificar:
+    runs-on:ubuntu-latest
+    steps:
+      -name:Notificacion
+      run echo"Cliente recurrente actualizado. Notificacion del equipo de AXA"
