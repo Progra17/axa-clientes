@@ -1,1 +1,10 @@
-
+name: Consultar Cliente
+  
+on: 
+  push:
+jobs:
+  notificar:
+    runs-on:ubuntu-latest
+    steps:
+      -name:Notificacion
+      run echo"Consulta del cliente realizada.\nNotificacion del equipo de AXA"
