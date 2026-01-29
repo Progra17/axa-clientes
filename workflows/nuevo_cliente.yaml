@@ -1,1 +1,10 @@
-
+name: Nuevo Cliente
+  
+on: 
+  push:
+jobs:
+  notificar:
+    runs-on:ubuntu-latest
+    steps:
+      -name:Notificacion
+      run echo"Se ha creado un nuevo cliente. Notificacion del equipo de AXA"
