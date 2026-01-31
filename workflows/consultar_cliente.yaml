@@ -2,6 +2,7 @@ name: Consultar Cliente
   
 on: 
   push:
+  
 jobs:
   notificar:
     runs-on: ubuntu-latest
