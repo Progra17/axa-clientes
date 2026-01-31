@@ -8,6 +8,13 @@ clientes = {}
 
 CARPETA_CLIENTES = "clientes"
 
+#Rellenar el diccionario si existen archivos
+for archivo in os.listdir(CARPETA_CLIENTES):
+    if archivo.endswith(".txt"):
+        nombre = archivo.replace(".txt", "").replace("_", " ")
+        clientes[nombre] = f"{CARPETA_CLIENTES}/{archivo}"
+#-----------
+
 # Crear carpeta si no existe
 if not os.path.exists(CARPETA_CLIENTES):
     os.makedirs(CARPETA_CLIENTES)
