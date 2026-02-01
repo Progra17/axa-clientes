@@ -1,4 +1,4 @@
-#version1.1
+#version 1.3
 import os
 
 # Diccionario (tabla hash)
