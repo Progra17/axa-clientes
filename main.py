@@ -1,5 +1,6 @@
+# VERSION EN DESARROLLO PARA SIMULAR FALLA O MEJORA
 # version 1.7
-# VERSION ESTABLE
+
 import os
 
 # Diccionario (tabla hash)
