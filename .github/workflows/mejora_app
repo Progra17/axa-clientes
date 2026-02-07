@@ -1,1 +1,14 @@
-
+name: Solicitar mejora de aplicacion
+  
+on: 
+  push:
+  
+jobs:
+  notificar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+        
+      - name: Solicitud de mejora
+        run: echo "Se añade a la lista la solicitud de mejora"
