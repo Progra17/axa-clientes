@@ -1,0 +1,14 @@
+name: Solicitud de nueva funcion
+  
+on: 
+  push:
+  
+jobs:
+  notificar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+        
+      - name: Notificacion solicitud de una nueva funcion
+        run: echo "Se ha añadido una nueva solicitud de una nueva funcion"
