@@ -7,7 +7,7 @@ WORKDIR /app
 
 #Copiamos el codigo al contenedor
 COPY main.py .
-COPY clientes ./clientes
+#COPY clientes ./clientes
 
 #Comando para ejecutar la aplicacion 
 CMD ["python", "main.py"]
