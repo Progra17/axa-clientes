@@ -1,4 +1,4 @@
-# version 1.6
+# version 1.7
 import os
 
 # Diccionario (tabla hash)
@@ -18,17 +18,18 @@ def crear_carpetas():
     if not os.path.exists(CARPETA_CLIENTES):
         os.makedirs(CARPETA_CLIENTES)
 
+    # Rellenar el diccionario si existen archivos
+
+    for archivo in os.listdir(CARPETA_CLIENTES):
+        if archivo.endswith(".txt"):
+            nombre = archivo.replace(".txt", "").replace("_", " ")
+            clientes[nombre] = f"{CARPETA_CLIENTES}/{archivo}"
+
     if not os.path.exists(CARPETA_SOLICITUDES):
         os.makedirs(CARPETA_SOLICITUDES)
 
 
 ARCHIVO_CONTADOR = f"{CARPETA_SOLICITUDES}/contador.txt"
-
-# Rellenar el diccionario si existen archivos
-for archivo in os.listdir(CARPETA_CLIENTES):
-    if archivo.endswith(".txt"):
-        nombre = archivo.replace(".txt", "").replace("_", " ")
-        clientes[nombre] = f"{CARPETA_CLIENTES}/{archivo}"
 
 
 # -----------
@@ -99,7 +100,6 @@ def listar_cliente():
 
     # Filtrar solo archivos .txt (clientes)
     cliente = [c for c in archivos if c.endswith(".txt")]
-
 
     if not cliente:
         print("No hay clientes registrados")
