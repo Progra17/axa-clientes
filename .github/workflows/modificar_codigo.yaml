@@ -1,0 +1,15 @@
+
+name: Modificacion de codigo
+  
+on: 
+  push:
+  
+jobs:
+  notificar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+        
+      - name: Notificacion de cambios en el codigo
+        run: echo "Se ha modificado el codigo del archivo"
