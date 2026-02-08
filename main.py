@@ -1,4 +1,4 @@
-# VERSION CON DEFECTOS, NO FUNCIONAL
+# ESTA VERSION TIENE DEFECTOS
 
 import os
 
@@ -173,7 +173,7 @@ def menu():
         print("1. Crear nuevo cliente")
         #print("2. Consultar cliente")
         #print("3. Actualizar cliente")
-        print("4. Listar clientes")
+        #print("4. Listar clientes")
         print("5. Borrar cliente")
         print("6. Registrar solicitud")
         print("7. Listar solicitudes")
@@ -187,8 +187,8 @@ def menu():
         #    consultar_cliente()
         #elif opcion == "3":
         #    actualizar_cliente()
-        elif opcion == "4":
-            listar_cliente()
+        #elif opcion == "4":
+        #    listar_cliente()
         elif opcion == "5":
             borrar_cliente()
         elif opcion == "6":
