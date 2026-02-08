@@ -1,5 +1,4 @@
-# VERSION EN DESARROLLO
-# version 1.??
+# VERSION CON DEFECTOS, NO FUNCIONAL
 
 import os
 
@@ -172,11 +171,11 @@ def menu():
     while True:
         print("\n--- Sistema Axanet ---")
         print("1. Crear nuevo cliente")
-        print("2. Consultar cliente")
-        print("3. Actualizar cliente")
+        #print("2. Consultar cliente")
+        #print("3. Actualizar cliente")
         print("4. Listar clientes")
         print("5. Borrar cliente")
-        #print("6. Registrar solicitud")
+        print("6. Registrar solicitud")
         print("7. Listar solicitudes")
         print("8. Salir")
 
@@ -184,16 +183,16 @@ def menu():
 
         if opcion == "1":
             crear_cliente()
-        elif opcion == "2":
-            consultar_cliente()
-        elif opcion == "3":
-            actualizar_cliente()
+        #elif opcion == "2":
+        #    consultar_cliente()
+        #elif opcion == "3":
+        #    actualizar_cliente()
         elif opcion == "4":
             listar_cliente()
         elif opcion == "5":
             borrar_cliente()
-        #elif opcion == "6":
-        #    registrar_solicitud()
+        elif opcion == "6":
+            registrar_solicitud()
         elif opcion == "7":
             listar_solicitudes()
         elif opcion == "8":
