@@ -1,5 +1,5 @@
-# VERSION EN DESARROLLO PARA SIMULAR FALLA O MEJORA
-# version 1.7
+# VERSION EN DESARROLLO
+# version 1.??
 
 import os
 
